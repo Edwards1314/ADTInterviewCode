@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Anagram3</string>
+
+    <string name="title">Anagram</string>
+    <string name="input_1_hint">Input 1</string>
+    <string name="input_2_hint">Input 2</string>
+    <string name="button_label">Check</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="dev_yn">Yes/No</string>
+
+</resources>
