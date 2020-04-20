@@ -18,7 +18,7 @@ Complete the following steps:
 ### The isAnagram() method ###
 Create a method that returns a boolean based on the following criteria
 
-1. The contents of the second EditText is an anagram of the contents of the first EditText
+1. True if the contents of the second EditText is an anagram of the contents of the first EditText
 2. If both inputs are empty, the method should return false
 3. White spaces shouldn't matter
 4. Capitalization shouldn't matter
