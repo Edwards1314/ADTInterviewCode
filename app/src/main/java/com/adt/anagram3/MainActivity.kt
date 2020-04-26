@@ -1,16 +1,9 @@
 package com.adt.anagram3
 
-import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.AttributeSet
-import android.view.View
-import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.adt.anagram3.Constants.EMPTY_STRING
-import com.adt.anagram3.Constants.NO
-import com.adt.anagram3.Constants.YES
 import kotlinx.android.synthetic.main.activity_main.*
-import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -34,18 +27,9 @@ class MainActivity : AppCompatActivity() {
         val in2 = input2.text?.toString() ?: EMPTY_STRING
 
         // Check if the inputs are an anagram
-        val result = isAnagram(in1, in2)
+        val result = AnagramUtils.isAnagram(in1, in2)
 
         // Display anagram results
-        when (result) {
-            true -> answer.text = YES
-            false -> answer.text = NO
-        }
+        answer.text = AnagramUtils.resultToString(result)
     }
-
-    private fun isAnagram(a:String, b:String): Boolean {
-        // TODO: Perform anagram check
-        return true
-    }
-
 }
