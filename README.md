@@ -8,7 +8,7 @@ An anagram is a word formed by rearranging all of the letters of one word into a
 Complete the following steps:
 
 1. Fork this project to your github
-2. Add your logic to the isAnagram() method (details below); additional methods may be added if desired
+2. Add your logic to the AnagramUtils.isAnagram() method (details below); additional methods may be added if desired
 3. Write unit tests to validate the code
 4. Push changes to your remote
 5. Reply to the given email immediately after changes are pushed with link to the repo
