@@ -3,8 +3,18 @@ package com.adt.anagram3
 object AnagramUtils {
 
     fun isAnagram(a:String, b:String): Boolean {
-        // TODO: Perform anagram check
-        return true
+        var lowerA = a.trim().toLowerCase()
+        var lowerB = b.trim().toLowerCase()
+        return if(lowerA.length != lowerB.length || (lowerA.isEmpty() && lowerB.isEmpty())){
+            false
+        }else if(lowerA == lowerB ){
+            false
+        }else {
+            var charlowerA = lowerA.toCharArray().sortedArray().joinToString("")
+            var charlowerB = lowerB.toCharArray().sortedArray().joinToString("")
+            charlowerA.equals(charlowerB)
+        }
+        return false
     }
 
     fun resultToString(result:Boolean): String {
